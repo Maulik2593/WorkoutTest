@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:context=".presentation.workout.WorkoutFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_14dp"
+            android:layout_marginTop="@dimen/size_6dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/label_workouts"
+                android:textAppearance="@style/LabelHeaders"
+                android:textColor="@color/colorTextDark"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/workout_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

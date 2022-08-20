@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LabelHeaders">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">@dimen/size_22sp</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="LabelSmall">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textSize">@dimen/size_10sp</item>
+        <item name="android:textColor">@color/colorTextDarkRed</item>
+    </style>
+
+    <style name="LabelTitles">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <style name="LabelSubTitles">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textSize">@dimen/size_13sp</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+    </style>
+
+</resources>
