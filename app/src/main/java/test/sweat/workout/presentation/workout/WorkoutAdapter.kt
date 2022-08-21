@@ -65,6 +65,8 @@ class MyViewHolder(val binding: ListItemWorkoutBinding) :
         Glide
             .with(binding.root)
             .load(workout.image)
+            .placeholder(R.drawable.loader)
+            .thumbnail(Glide.with(binding.root.context).load(R.drawable.loader))
             .apply(RequestOptions.bitmapTransform(RoundedCorners(binding?.root?.context.dpToPx(14))))
             .into(binding.workoutImage)
     }

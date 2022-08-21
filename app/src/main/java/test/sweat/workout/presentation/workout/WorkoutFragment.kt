@@ -80,7 +80,6 @@ class WorkoutFragment : Fragment() {
         //If app is not connected to internet display error
         if(!isConnectedToInternet(this.context)) {
             Toast.makeText(activity, "Please check internet connection", Toast.LENGTH_LONG).show()
-            return
         }
 
         //Calling suspending function and we will observer for live data
